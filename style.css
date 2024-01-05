@@ -1,0 +1,338 @@
+@font-face {
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.app{
+    height:98vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.left{
+    background-image: linear-gradient(to right,rgb(205, 205, 205),rgb(150, 150, 150));
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 1px;
+    display: flex;
+    height: 100%;
+    flex-grow: 0;
+    width: 200px;
+    min-width: 200px;
+}
+
+.left img{
+    margin-top: 3px;
+    width: 75px;
+    border-radius: 50%;
+}
+.left .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left .profile h4{
+    font-style: bold;
+    letter-spacing: 2px;
+    font-size: 19px;
+    font-family: Bebas;
+}
+.left .profile p{
+    font-size: 11px;
+}
+.left .profile .info{
+    line-height: 5px;
+    margin-left: 5px;
+}
+.search{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+.search input{
+    width: 90%;
+    height: 35px;
+    background: rgba(44, 44, 44, 0.126);
+    border: 0px solid rgb(170, 170, 170);
+    border-bottom: 2px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}
+.item {
+    overflow: auto;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    width: 100%;
+}
+.item input{
+    width: 90px;
+}
+
+.item ul{
+    
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 140px;
+}
+.item ul li{
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 6px;
+    width: 125%;
+    background: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+    list-style-type: none;
+    border-radius: 5px;
+    height: 32px;
+}
+.item ul li:hover{
+    border: 2px solid rgb(67, 67, 67);
+    margin-bottom: 6px;
+    width: 125%;
+    background: rgba(0, 0, 0, 0.073);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+    list-style-type: none;
+    border-radius: 5px;
+    height: 32px;
+}
+.item ul li h4{
+    margin-bottom:5px;
+}
+.item ul li .list{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.item .icon span{
+    margin-top: 4px;
+}
+.item .logo img{
+  
+    width: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.item .name{
+    margin-bottom: 10px;
+}
+.left .add-list{
+    margin-top: auto;
+}
+.add-list .list{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.add-list .logo img{
+    width: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.add-list .name{
+    margin-top: 5px;
+}
+.addNewCat ul li .list .logo{
+    display:grid;
+}
+.main{
+    border-radius: 1px;
+    background-image: linear-gradient(to right,rgb(149, 149, 149),rgb(96, 96, 96));
+    padding: 20px;
+    justify-content: start;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+.main .helmet {
+    font-family: Bebas;
+    font-size: 20px;
+    letter-spacing:1.52px;
+    display: flex;
+    height: 70px;
+}
+.main .helmet .icon{
+    display: flex;
+    justify-content: end;
+    width: 10%;
+    justify-items: end;
+}
+.main .helmet img{
+    width: 50px;
+    height: 80%;
+}
+.main .helmet .desc{
+    margin-top: 20px;
+    font-weight: 800;
+}
+.main .item{
+    overflow: auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.main .addNewCat{
+    list-style: none;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 40px;
+}
+.main .addNewCat #last-list .list{
+    display: grid;
+}
+.main .addNewCat img {
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: auto;
+}
+.main .addNewCat label{
+    margin-bottom: 3px;
+}
+.main .item .list{
+    display: flex;
+    align-items: center;
+}
+.main .item ul{
+    display: flex;
+    width: 100%;
+    justify-items:end;
+    height: 100%;
+}
+.main .item ul li{
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.main .item .logo{
+    margin-left: 10px;
+}
+.main .item ul #last-list{
+    margin-top: auto;
+}
+.detail{
+    justify-content: center;
+    display: flex;
+    width: 160px;
+    flex-grow: 0;
+    height: 100%;
+    
+
+    flex-grow: 0;
+}
+.main .item ul li .list{
+    width: 100%;
+    display: flex;
+}
+.main .item .list input[type='checkbox']{
+    position: absolute;
+    opacity: 0;
+    margin-left: 9px;
+    width: 1.8em;
+    height: 1.8em;
+    margin-bottom: 10px;
+}
+.main .item .list label{
+    display: flex;
+    margin-left: 8px;
+}
+.main .item .list input[type="checkbox"]:checked + label::before{
+    background-color: rgb(183, 255, 184);
+    border-radius: 50% ;
+    content: '\002714';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .item .list label::before,
+.main .item .list input[type="checkbox"]:checked + label::before{
+    background-color: rgba(117, 135, 255, 0.159);
+}
+.main .item .list label::before{
+    background: transparent;
+    content: "";
+    border-radius: 50% ;
+    width: 1.5em;
+    height: 1.5em;
+    border: .1em solid black;
+    margin-bottom: 7px;
+    margin-right: 8px;
+}
+.main .item ul li .list .logo2{
+    margin-right: 5px;
+}
+.main .item ul li .list .logo2 img{
+    width: 30px;
+    margin-right: 5px;
+}
+.main .item ul li .list .logo2{
+    margin-left: auto;
+}
+.detail{
+    border: 2px solid black;
+    padding: 4px 0px;
+    height: 70%;
+    border-radius: 5px;
+    background: transparent;
+    margin-top: 0px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.detail .list{
+    background: rgba(228, 47, 177, 0.168);
+    width: 90%;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    display:flex ;
+    align-items: center;
+}
+.detail .list .name{
+    margin-left: 2px;
+}
+.detail .list .icon{
+    margin-left: auto;
+}
+.detail .list .icon img{
+    width: 20px;
+    margin-right: 4px;
+}
+
+@media screen and  (max-width: 700px){
+    .detail{
+        display: none;
+    }
+}
+    
+
+
+.item ul .my-div:default{
+    background: rgb(255, 17, 17);
+}
+
+
+
+
+
+

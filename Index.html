@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="left">
+            <div class="profile">
+                <input type="file" id="imageInput" style="display: none;">
+                    <img id="profilePicture" src="photo_2_2024-01-04_18-44-53.jpg">
+                <div class="info">
+                    <h4>BOOREY-48</h4>
+                    <p>boreysethkpk@gmail.com</p>
+                </div>
+            </div>
+            <div class="search">
+                <input type="search" id="searchBar" placeholder="Search...">
+            </div>
+            <div class="item">
+                <ul>
+                    <li class ="active" id="defaultItem" onclick="filterTaskByCategory('all')" ondblclick="Rename('all')">
+                        <div class="list">
+                            <div class="logo">
+                                <img src="configuration.png">
+                            </div>
+                            <div><label>All Task</label></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="add-list">
+                 <div class="list">
+                            <div class="logo">
+                                <img src="add.png">
+                            </div>
+                            <div class="name" onclick="NewCategory()"><label>Add Thmey</label></div>
+            </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="helmet">
+                <div class="icon"><img src="motor-helmet.png"></div>
+                <div class="desc">HELMET</div>
+            </div>
+            <div class="item">
+                <ul>
+                </ul>
+            </div>
+            <div class="addNewCat"><ul>   
+                
+            </ul></div>
+        </div>
+
+    </div>
+    <script src="task.js"></script>
+    <script  src="apppp.js"></script>
+</body>
+</html>
